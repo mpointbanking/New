@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M Point Business Solutions | Financial, Insurance & Compliance Services</title>
+  <meta name="description" content="M POINT BUSINESS SOLUTIONS - Your trusted partner for Banking & CSP, PAN, GST, MSME, FSSAI, Insurance, and Gazette of India notifications in Dhubri, Assam." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons CDN -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#0c4a6e',
+              900: '#082f49',
+              accent: '#0052cc',
+              dark: '#03193a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+    .gradient-hero {
+      background: linear-gradient(135deg, #03193a 0%, #082f49 50%, #0052cc 100%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-sky-500 selection:text-white flex flex-col min-h-screen">
+
+  <aside aria-label="Quick download bar" class="bg-emerald-700 text-white text-xs py-2.5 px-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex p-1 bg-white/20 rounded-lg">
+          <i class="ph-bold ph-download-simple text-sm"></i>
+        </span>
+        <span class="font-medium">Need the raw file for GitHub?</span>
+        <span class="text-emerald-200 hidden sm:inline">Tap the green button to save `index.html` directly:</span>
+      </div>
+      <button id="downloadFileBtn" onclick="downloadCurrentFile()" class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-emerald-900 hover:bg-emerald-50 rounded-lg font-bold text-xs shadow transition-transform active:scale-95">
+        <i class="ph-bold ph-file-arrow-down text-emerald-700 text-sm"></i>
+        <span>Download index.html File</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="bg-brand-dark text-slate-300 text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+        <span class="inline-flex items-center gap-1.5 text-sky-400 font-medium">
+          <i class="ph-bold ph-shield-check text-sm"></i>
+          <span>Reg. No:</span>
+          <strong class="text-white font-mono tracking-wide">106176IN38734972026</strong>
+        </span>
+        <span class="hidden sm:inline text-slate-600">•</span>
+        <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+          <i class="ph-bold ph-buildings text-sm"></i>
+          <span>MSME Reg:</span>
+          <strong class="text-white font-mono tracking-wide">AS-09-0014622</strong>
+        </span>
+      </div>
+      
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="tel:+917896735013" class="hover:text-white flex items-center gap-1.5 transition-colors">
+          <i class="ph-fill ph-phone-call text-emerald-400"></i>
+          <span class="hidden md:inline">+91 7896735013</span>
+        </a>
+        <a href="mailto:mpointbanking@gmail.com" class="hover:text-white flex items-center gap-1.5 transition-colors">
+          <i class="ph-fill ph-envelope-simple text-sky-400"></i>
+          <span class="hidden lg:inline">mpointbanking@gmail.com</span>
+        </a>
+        <span class="inline-flex items-center gap-1 text-slate-400">
+          <i class="ph-fill ph-map-pin text-rose-400"></i>
+          <span>Dhubri, Assam</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky top-[41px] z-40 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="relative w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-2xl bg-gradient-to-tr from-brand-900 via-brand-accent to-sky-400 p-0.5 shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-white rounded-[14px] flex items-center justify-center overflow-hidden">
+            <svg viewBox="0 0 100 100" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0284C7" />
+                  <stop offset="50%" stop-color="#0052CC" />
+                  <stop offset="100%" stop-color="#03193A" />
+                </linearGradient>
+              </defs>
+              <path d="M 50 8 A 42 42 0 1 0 92 50 A 42 42 0 0 0 50 8 Z M 50 16 A 34 34 0 1 1 16 50 A 34 34 0 0 1 50 16 Z" fill="url(#logoGrad)"/>
+              <path d="M 28 72 L 28 32 L 40 32 L 50 54 L 60 32 L 72 32 L 72 72 L 62 72 L 62 46 L 53 65 L 47 65 L 38 46 L 38 72 Z" fill="url(#logoGrad)" />
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-baseline gap-1.5">
+            <span class="font-display font-extrabold text-xl tracking-tight text-brand-dark">M POINT</span>
+            <span class="text-xs font-bold tracking-widest text-sky-600 uppercase">SOLUTIONS</span>
+          </div>
+          <span class="text-[10px] tracking-wider uppercase font-semibold text-slate-500">Your Growth • Our Priority</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-brand-accent transition-colors">About Us</a>
+        <a href="#services" class="hover:text-brand-accent transition-colors">Services</a>
+        <a href="#gazette" class="hover:text-brand-accent transition-colors">Gazette of India</a>
+        <a href="#contact" class="hover:text-brand-accent transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/917896735013?text=Hello%20M%20Point%20Business%20Solutions,%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition-all shadow-sm active:scale-95">
+          <i class="ph-fill ph-whatsapp-logo text-base"></i>
+          <span class="hidden sm:inline">WhatsApp</span>
+        </a>
+        <a href="#inquiry" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-brand-accent hover:bg-blue-700 rounded-xl transition-all shadow-md active:scale-95">
+          <i class="ph-bold ph-paper-plane-tilt text-sm"></i>
+          <span>Get Quote</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative gradient-hero text-white overflow-hidden py-14 lg:py-20">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-medium text-sky-200">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>Government Verified & MSME Certified Provider</span>
+          </div>
+          
+          <h1 class="font-display text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+            Empowering Your Business Under <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-200 to-white">One Single Roof</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-200 max-w-2xl font-light leading-relaxed">
+            Fast, reliable, and affordable business assistance in Dhubri and across Assam. We specialize in Financial Banking Facilitation, GST, Import-Export, Business Registration, Insurance, and Central Gazette of India notifications.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+            <div class="bg-white/10 border border-white/10 rounded-2xl p-2.5 text-center">
+              <i class="ph-bold ph-lightning text-sky-400 text-lg"></i>
+              <div class="text-xs font-bold mt-0.5">Fast Process</div>
+              <div class="text-[10px] text-slate-300">Quick turnaround</div>
+            </div>
+            <div class="bg-white/10 border border-white/10 rounded-2xl p-2.5 text-center">
+              <i class="ph-bold ph-seal-check text-emerald-400 text-lg"></i>
+              <div class="text-xs font-bold mt-0.5">Genuine Service</div>
+              <div class="text-[10px] text-slate-300">100% compliant</div>
+            </div>
+            <div class="bg-white/10 border border-white/10 rounded-2xl p-2.5 text-center">
+              <i class="ph-bold ph-user-check text-amber-300 text-lg"></i>
+              <div class="text-xs font-bold mt-0.5">Expert Support</div>
+              <div class="text-[10px] text-slate-300">End-to-end guidance</div>
+            </div>
+            <div class="bg-white/10 border border-white/10 rounded-2xl p-2.5 text-center">
+              <i class="ph-bold ph-clock text-cyan-300 text-lg"></i>
+              <div class="text-xs font-bold mt-0.5">24/7 Assistance</div>
+              <div class="text-[10px] text-slate-300">Always accessible</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-3">
+            <a href="#services" class="w-full sm:w-auto text-center px-6 py-3 bg-white text-brand-dark hover:bg-slate-100 font-bold rounded-xl text-xs sm:text-sm transition-all shadow-lg">
+              Explore Our 6 Verticals
+            </a>
+            <a href="#inquiry" class="w-full sm:w-auto text-center px-6 py-3 bg-brand-accent/90 hover:bg-brand-accent border border-white/20 text-white font-semibold rounded-xl text-xs sm:text-sm transition-all">
+              Request Free Consultation
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md bg-white text-slate-800 rounded-3xl p-6 shadow-2xl border border-slate-100 animate-float">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-extrabold text-xl">
+                  M
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-sm text-slate-900 leading-snug">M Point Desk Support</h3>
+                  <span class="text-xs text-emerald-600 font-medium flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Helpdesk Ready
+                  </span>
+                </div>
+              </div>
+              <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-0.5 rounded-lg">Dhubri, Assam</span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
+                <span class="text-slate-700 font-medium">Udyam / MSME Registration</span>
+                <span class="text-emerald-600 font-semibold flex items-center gap-1"><i class="ph-fill ph-check-circle"></i> Certified</span>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
+                <span class="text-slate-700 font-medium">GST & IEC Import Export</span>
+                <span class="text-sky-600 font-semibold flex items-center gap-1"><i class="ph-fill ph-check-circle"></i> Authorized</span>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
+                <span class="text-slate-700 font-medium">Bank CSP & DBT Aadhaar</span>
+                <span class="text-blue-600 font-semibold flex items-center gap-1"><i class="ph-fill ph-check-circle"></i> Facilitated</span>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
+                <span class="text-slate-700 font-medium">Gazette Notification & DSC</span>
+                <span class="text-purple-600 font-semibold flex items-center gap-1"><i class="ph-fill ph-check-circle"></i> Central Govt</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Direct Helpline</div>
+                <a href="tel:+917896735013" class="font-display font-extrabold text-brand-dark text-sm hover:text-sky-600 transition-colors">
+                  +91 7896735013
+                </a>
+              </div>
+              <a href="#inquiry" class="p-2 bg-brand-accent text-white rounded-xl hover:bg-blue-700 transition-all">
+                <i class="ph-bold ph-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-6 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-brand-accent text-xs font-bold uppercase tracking-wider">
+            About Our Firm
+          </div>
+          <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Your Trusted Business & Documentation Partner
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            <strong>M POINT BUSINESS SOLUTIONS</strong> is a customer-focused business service provider, dedicated to supporting individuals, businesses, and entrepreneurs with reliable, affordable, and hassle-free documentation, compliance, and financial solutions.
+          </p>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            We aim to make your business journey simpler, faster, and more secure by offering end-to-end assistance under one unified roof.
+          </p>
+
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <div class="border-l-4 border-sky-600 pl-3 py-1">
+              <span class="text-[10px] text-slate-500 uppercase font-semibold block">Official Reg. No.</span>
+              <span class="font-mono font-bold text-slate-800 text-xs">106176IN38734972026</span>
+            </div>
+            <div class="border-l-4 border-emerald-600 pl-3 py-1">
+              <span class="text-[10px] text-slate-500 uppercase font-semibold block">MSME Registration</span>
+              <span class="font-mono font-bold text-slate-800 text-xs">AS-09-0014622</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-3">
+          <h3 class="font-display font-bold text-slate-900 text-base">Key Assurances for Our Clients</h3>
+          
+          <div class="space-y-2.5 text-xs">
+            <div class="flex items-start gap-2.5">
+              <div class="w-6 h-6 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="ph-bold ph-shield-check"></i>
+              </div>
+              <p class="text-slate-600"><strong>Authentic Acknowledgements:</strong> All registrations and filings are done through legal, government-approved portals.</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <div class="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="ph-bold ph-lightning"></i>
+              </div>
+              <p class="text-slate-600"><strong>Zero Delay Processing:</strong> Thorough document checks avoid rejections and keep approval times quick.</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <div class="w-6 h-6 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="ph-bold ph-map-pin"></i>
+              </div>
+              <p class="text-slate-600"><strong>Physical Headquarters:</strong> Visit us in person at Lakhimari Pt 1, Dhubri, Assam (783334).</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">Complete Catalog</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">Our 6 Major Service Verticals</h2>
+        <p class="text-slate-600 text-xs sm:text-sm">Filter by category or click on any vertical to initiate an inquiry immediately.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+        <button onclick="filterServices('all')" class="filter-btn active px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-brand-accent text-white shadow transition-all" data-filter="all">All Services</button>
+        <button onclick="filterServices('financial')" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-all" data-filter="financial">Financial</button>
+        <button onclick="filterServices('insurance')" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-all" data-filter="insurance">Insurance</button>
+        <button onclick="filterServices('compliance')" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-all" data-filter="compliance">Compliance</button>
+        <button onclick="filterServices('licensing')" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-all" data-filter="licensing">Business Licenses</button>
+        <button onclick="filterServices('digital')" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-all" data-filter="digital">Digital & DSC</button>
+        <button onclick="filterServices('gazette')" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-all" data-filter="gazette">The Gazette</button>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid">
+        
+        <!-- 1. Financial Services -->
+        <div class="service-card financial bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-accent flex items-center justify-center text-xl mb-3">
+              <i class="ph-bold ph-bank"></i>
+            </div>
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">1. Financial Services</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 mb-5">
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Banking & CSP Facilitation</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Bank Account Opening / KYC</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Aadhaar Seeding & DBT Services</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Micro Finance & Loan Assistance</li>
+              <li class="flex items-center gap-2 font-semibold text-brand-accent"><i class="ph-fill ph-check text-brand-accent"></i> PAN Card (New, Update, Reprint)</li>
+            </ul>
+          </div>
+          <button onclick="prefillInquiry('Financial Services & PAN Card')" class="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-brand-accent hover:text-white text-xs font-semibold text-slate-700 transition-all">
+            Inquire for Financial Services
+          </button>
+        </div>
+
+        <!-- 2. Insurance Services -->
+        <div class="service-card insurance bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-3">
+              <i class="ph-bold ph-shield-plus"></i>
+            </div>
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">2. Insurance Services</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 mb-5">
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Motor Insurance (2W, 4W, Commercial)</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Life Insurance Plans</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Health Insurance Coverage</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Policy Advisory & Instant Issuance</li>
+            </ul>
+          </div>
+          <button onclick="prefillInquiry('Insurance Services')" class="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-emerald-600 hover:text-white text-xs font-semibold text-slate-700 transition-all">
+            Inquire for Insurance
+          </button>
+        </div>
+
+        <!-- 3. Government Documentation -->
+        <div class="service-card compliance bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl mb-3">
+              <i class="ph-bold ph-file-text"></i>
+            </div>
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">3. Govt Documentation & Compliance</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 mb-5">
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> GST Registration & Monthly Returns</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> IEC (Import Export Code) DGFT</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> CBIC & ICEGATE Customs Approvals</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> APEDA Certification & Permits</li>
+            </ul>
+          </div>
+          <button onclick="prefillInquiry('Govt Compliance & GST')" class="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-sky-600 hover:text-white text-xs font-semibold text-slate-700 transition-all">
+            Inquire for Documentation
+          </button>
+        </div>
+
+        <!-- 4. Business Registration -->
+        <div class="service-card licensing bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl mb-3">
+              <i class="ph-bold ph-briefcase"></i>
+            </div>
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">4. Business Registration & Licensing</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 mb-5">
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Udyam Registration (MSME)</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> FSSAI Food License & Renewal</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Municipal Trade Licence</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> EODB (Ease of Doing Business)</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Company / LLP Registration</li>
+            </ul>
+          </div>
+          <button onclick="prefillInquiry('Business Licensing & MSME')" class="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-purple-600 hover:text-white text-xs font-semibold text-slate-700 transition-all">
+            Inquire for Licensing
+          </button>
+        </div>
+
+        <!-- 5. Digital Services -->
+        <div class="service-card digital bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl mb-3">
+              <i class="ph-bold ph-signature"></i>
+            </div>
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">5. Digital Services</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 mb-5">
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Digital Signature Certificate (DSC Class 3)</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Legal e-Sign Services</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Document E-Stamping</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Online Form Submissions & Tender Filing</li>
+            </ul>
+          </div>
+          <button onclick="prefillInquiry('Digital Services & DSC')" class="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 hover:text-white text-xs font-semibold text-slate-700 transition-all">
+            Inquire for Digital Tools
+          </button>
+        </div>
+
+        <!-- 6. Gazette of India Services -->
+        <div class="service-card gazette bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-3">
+              <i class="ph-bold ph-newspaper"></i>
+            </div>
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">6. The Gazette of India Notification</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 mb-5">
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Official Central Gazette Notifications</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Legal Name Change / Correction</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Affidavit Drafting & Newspaper Ads</li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check text-emerald-500"></i> Publication & Certified Copy Delivery</li>
+            </ul>
+          </div>
+          <button onclick="prefillInquiry('Gazette of India Notification')" class="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-amber-600 hover:text-white text-xs font-semibold text-slate-700 transition-all">
+            Inquire for Gazette Services
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="gazette" class="py-14 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-brand-900 via-brand-dark to-slate-900 rounded-3xl p-6 sm:p-10 text-white shadow-xl">
+        <div class="max-w-2xl space-y-3">
+          <span class="inline-block px-3 py-0.5 rounded-full bg-amber-400/20 text-amber-300 font-semibold text-[11px]">
+            Central Government Gazette Notification
+          </span>
+          <h2 class="font-display text-2xl sm:text-3xl font-extrabold">Official Gazette Notification & Legal Name Change Support</h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Need an official name change published in <em>The Gazette of India</em>? We assist with mandatory newspaper publications, non-judicial stamp affidavits, formatting, and submission to the Department of Publication.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-3">
+            <a href="#inquiry" onclick="prefillInquiry('Gazette of India Notification')" class="px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-xs shadow transition-all">
+              Apply for Gazette Notice
+            </a>
+            <a href="https://wa.me/917896735013?text=Hello,%20I%20need%20assistance%20with%20The%20Gazette%20of%20India%20Notification%20process." target="_blank" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs transition-all flex items-center gap-1.5">
+              <i class="ph-fill ph-whatsapp-logo text-emerald-400 text-sm"></i>
+              <span>WhatsApp Gazette Desk</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inquiry" class="py-16 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-lg">
+        <div class="text-center max-w-xl mx-auto mb-6 space-y-1">
+          <h2 class="font-display text-2xl font-extrabold text-slate-900">Request a Service Consultation</h2>
+          <p class="text-xs text-slate-500">Fill out your details to submit directly or chat instantly on WhatsApp.</p>
+        </div>
+
+        <form id="contactForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+              <input type="text" id="custName" required placeholder="Enter full name" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Phone Number *</label>
+              <input type="tel" id="custPhone" required placeholder="+91 7896735013" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Email Address</label>
+              <input type="email" id="custEmail" placeholder="yourname@gmail.com" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Service Required *</label>
+              <select id="custService" required class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent bg-white text-slate-700">
+                <option value="Financial Services & PAN Card">Financial Services & PAN Card</option>
+                <option value="Insurance Services">Insurance (Motor, Life, Health)</option>
+                <option value="Govt Compliance & GST">Govt Documentation (GST / IEC / ICEGATE)</option>
+                <option value="Business Licensing & MSME">Business Registration (Udyam MSME / FSSAI)</option>
+                <option value="Digital Services & DSC">Digital Services (DSC Class 3 / e-Sign)</option>
+                <option value="Gazette of India Notification">The Gazette of India Notification</option>
+                <option value="General Query">Other Business Service</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Details / Notes</label>
+            <textarea id="custMessage" rows="3" placeholder="Describe your requirement..." class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-accent"></textarea>
+          </div>
+
+          <div id="formSuccess" class="hidden p-3 rounded-xl text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-300">
+            Thank you! Your request has been recorded. Our Dhubri support team will get in touch with you shortly.
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <button type="button" onclick="sendViaWhatsApp()" class="flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-2 shadow transition-all">
+              <i class="ph-fill ph-whatsapp-logo text-base"></i>
+              Send Directly via WhatsApp
+            </button>
+            <button type="submit" class="flex-1 py-3 px-4 rounded-xl bg-brand-accent hover:bg-blue-700 text-white font-bold text-xs flex items-center justify-center gap-2 shadow transition-all">
+              <i class="ph-bold ph-paper-plane-tilt text-base"></i>
+              Submit Consultation Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-14 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-accent flex items-center justify-center text-xl flex-shrink-0">
+            <i class="ph-fill ph-map-pin"></i>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-slate-900 text-xs uppercase">Headquarters</h4>
+            <p class="text-xs text-slate-600 mt-0.5">Lakhimari Pt 1, Dhubri<br>Assam - 783334, India</p>
+          </div>
+        </div>
+
+        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl flex-shrink-0">
+            <i class="ph-fill ph-phone-call"></i>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-slate-900 text-xs uppercase">Helpline & WhatsApp</h4>
+            <a href="tel:+917896735013" class="text-xs text-brand-accent font-bold block mt-0.5">+91 7896735013</a>
+            <span class="text-[10px] text-slate-500">Mon - Sat (9:00 AM - 7:00 PM)</span>
+          </div>
+        </div>
+
+        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl flex-shrink-0">
+            <i class="ph-fill ph-envelope-simple"></i>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-slate-900 text-xs uppercase">Email Desk</h4>
+            <a href="mailto:mpointbanking@gmail.com" class="text-xs text-brand-accent font-bold block mt-0.5">mpointbanking@gmail.com</a>
+            <span class="text-[10px] text-slate-500">Prompt responses</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-brand-dark text-slate-400 text-xs py-8 border-t border-white/10 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+        <div>
+          <span class="font-display font-bold text-white text-sm tracking-wide">M POINT BUSINESS SOLUTIONS</span>
+          <p class="text-[11px] text-slate-400">Your Growth • Our Priority</p>
+        </div>
+        <div class="text-[11px] text-slate-400 font-mono">
+          Reg: 106176IN38734972026 | MSME: AS-09-0014622
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-4 text-center text-slate-500 text-[11px]">
+        &copy; 2026 M POINT BUSINESS SOLUTIONS. All rights reserved. Lakhimari Pt 1, Dhubri, Assam.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/917896735013?text=Hello%20M%20Point%20Business%20Solutions,%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+     target="_blank" 
+     class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110 active:scale-95"
+     title="Direct WhatsApp Chat">
+    <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+  </a>
+
+  <script>
+    // 1-Click HTML File Downloader
+    function downloadCurrentFile() {
+      const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const downloadLink = document.createElement('a');
+      downloadLink.href = url;
+      downloadLink.download = 'index.html';
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+      URL.revokeObjectURL(url);
+    }
+
+    // Service Filtering Logic
+    function filterServices(category) {
+      const cards = document.querySelectorAll('.service-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+      
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-filter') === category) {
+          btn.className = 'filter-btn active px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-brand-accent text-white shadow transition-all';
+        } else {
+          btn.className = 'filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-all';
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Prefill form from cards
+    function prefillInquiry(serviceName) {
+      const select = document.getElementById('custService');
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value.includes(serviceName) || select.options[i].text.includes(serviceName)) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+      document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // In-page form feedback without alerts
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const successEl = document.getElementById('formSuccess');
+      successEl.classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('contactForm').reset();
+        successEl.classList.add('hidden');
+      }, 5000);
+    }
+
+    // Send prefilled message via WhatsApp
+    function sendViaWhatsApp() {
+      const name = document.getElementById('custName').value.trim() || 'Valued Client';
+      const phone = document.getElementById('custPhone').value.trim() || 'Not specified';
+      const service = document.getElementById('custService').value;
+      const notes = document.getElementById('custMessage').value.trim() || 'None';
+
+      const message = `Hello M Point Business Solutions,\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nNotes: ${notes}`;
+      const url = `https://wa.me/917896735013?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
